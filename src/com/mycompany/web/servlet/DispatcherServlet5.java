@@ -3,6 +3,7 @@ package com.mycompany.web.servlet;
 import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,6 +18,10 @@ public class DispatcherServlet5 extends HttpServlet{
 		
 		request.setAttribute("name", name);
 		request.setAttribute("age", age);
+		
+//		ServletContext servletContext = request.getServletContext();
+//		servletContext.setAttribute("name", name);
+//		servletContext.setAttribute("age", age);
 		
 		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/view/dispatcher5.jsp");
 		rd.forward(request, response);

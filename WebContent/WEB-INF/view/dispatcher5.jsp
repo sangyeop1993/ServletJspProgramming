@@ -9,8 +9,12 @@
 	<h4>dispatcher5.jsp</h4>
 	
 	<%-- How1 --%>
+	
 	name: <%=request.getAttribute("name")%><br/>
 	age: <%=request.getAttribute("age")%><br/>
+	
+	<%--name: <%=application.getAttribute("name")%><br/>
+	age: <%=application.getAttribute("age")%><br/>--%>
 	
 	<%-- How2 --%>
 	name: ${name}<br/>
