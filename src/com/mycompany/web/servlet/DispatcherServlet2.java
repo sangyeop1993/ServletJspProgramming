@@ -16,6 +16,7 @@ public class DispatcherServlet2 extends HttpServlet {
 		System.out.println("contextConfigLocation: "+contextConfigLocation);
 		System.out.println("네 알겠습니다. 나는 "+contextConfigLocation+" 이 경로에 있는 파일을 읽고 적용을 하겠습니다.");
 	}
+	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("DispatcherServlet2 service run...");

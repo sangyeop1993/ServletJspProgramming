@@ -9,25 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class DispatcherServlet1 extends HttpServlet{
-	private String x;
-	private String y;
-	
-	@Override
-	public void init(ServletConfig config) throws ServletException {
-		System.out.println("init(ServletConfig config) run...");
-		x = config.getInitParameter("x");
-		y = config.getInitParameter("y");
-		
-		System.out.println("전달 받은 x 값: "+x);
-		System.out.println("전달 받은 y 값: "+y);
-	}
 	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		System.out.println("DispatcherServlet service run...");
-		int xValue = Integer.parseInt(x);
-		int yValue = Integer.parseInt(y);
-		int result = xValue+yValue;
-		System.out.println("result: "+result);
+		System.out.println("DispatcherServlet1 service run...");
 	}
 }
