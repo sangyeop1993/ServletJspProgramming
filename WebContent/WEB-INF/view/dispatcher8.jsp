@@ -16,10 +16,9 @@
 	
 	<%Counter sessionCounter = (Counter)session.getAttribute("sessCounter"); //HttpSession 객체 %>
 	sessCounter: <%=sessionCounter.getValue()%><br/>
-	
 	<%Counter requestCounter = (Counter)request.getAttribute("reqCounter"); //HttpServletRequset 객체 %>
 	reqCounter: <%=requestCounter.getValue()%><br/><br/>
-	
+	 
 	<%-- How2(Expression Language) --%>
 	appCounter: ${appCounter.value}<br/>
 	sessCounter: ${sessCounter.value}<br/>
